@@ -65,6 +65,10 @@ var click_group;
 var poteca;
 var reading = true;
 
+var composer;
+var rgbPass;
+var colorifyPass;
+var elementToChange;
 
 
 
