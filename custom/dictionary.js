@@ -77,7 +77,9 @@ var light;
 var ambientLight, ambientLight2;
 
 var day = true;
-
+var day_time = 50000;
+var time_now = 0;
+var timedout;
 
 
 

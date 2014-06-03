@@ -100,6 +100,7 @@ function init()
 	praslea.receiveShadow = false;
 	praslea.name = "praslea"
 	scene.add( praslea );
+	praslea.add(light);
 	}
 /*
 	//Add Zmeu to Scene
@@ -196,9 +197,10 @@ function init()
 	spotLight.target.position.set(2418,0,2627);
 	scene.add( spotLight );
 
-	light = new THREE.PointLight( 0xffffff, 0.88, 666 );
-	//light.position.set( 50, 50, 50 );
+	light = new THREE.PointLight( 0xfaffbd, 0.661, 661 );
+	light.position.set( 10, 350, 10 );
 	scene.add( light );
+
 	/*
 	spotLight.castShadow = true;
 	renderer.shadowMapBias = 0.39;

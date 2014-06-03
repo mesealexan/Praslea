@@ -1,23 +1,74 @@
-var uu = 0;
-function update()
-	{
 
-if(uu<255 && day ===true)
-	uu = Math.round(uu + 0.6)
-else 
-	day = false;
-if(uu>0 && day ===false)
-	uu = Math.round(uu - 0.6)
-else
-	day= true;
-//console.log(uu)
-background_color = rgbToHex(uu, uu, uu);
+time_start = new Date();
+var day = true;
+var time_now = 255;
+setInterval(function(){
+	if(time_now<255 && day === true)
+		time_now ++
+	else
+	{
+		day = false;
+	}
+	if(time_now>0 && day === false)
+	{
+		time_now --
+	}
+	else
+	{
+		day =true;
+	}
+background_color = rgbToHex(time_now, time_now, time_now);
 spotLight.color.setHex( background_color );
 scene.fog.color.setHex( background_color );
 ambientLight.color.setHex( background_color );
 ambientLight2.color.setHex( background_color );
+//	console.log(time_now)
+},100);
 
-		//console.log(scene.children.length)
+function update()
+	{
+
+
+		/*
+	time_now = new Date();
+
+	timer = (time_now.getTime() - time_start.getTime())/30; //seconds elapsed from begining
+	tempo = Math.round(timer%255)
+	if(tempo>254)
+		tempo = Math.abs(255 - Math.round(timer%255))
+	else
+		tempo = Math.round(timer%255)
+	console.log(tempo)*/
+	/*
+	timed_negative = Math.abs(50000 - timed)
+//console.log(uu)
+
+
+
+	if(timed<50000 && day === true)
+	{
+	tempo = Math.round(interpolate(0,timed,50000,0,255))
+	}
+		else
+		{
+			day = false;
+		}
+	if(timed>0 && day === false)
+	{
+	tempo = Math.round(interpolate(50000,timed_negative,0,255,0))
+	}
+		else
+		{
+			day = true;
+		}
+console.log(tempo);
+//background_color = rgbToHex(tempo, tempo, tempo);
+spotLight.color.setHex( background_color );
+scene.fog.color.setHex( background_color );
+ambientLight.color.setHex( background_color );
+ambientLight2.color.setHex( background_color );
+	//console.log(timed, timed_negative);
+	*/
 if(test === true)
 {
 if(scene.children.length >= 2)
@@ -46,9 +97,9 @@ if(paznic)
 		
 if(praslea){
 
-	light.position.x = praslea.position.x;
-	light.position.y = praslea.position.y + 150;
-	light.position.z = praslea.position.z;
+	//light.position.x = praslea.position.x;
+	//light.position.y = praslea.position.y + 150;
+	//light.position.z = praslea.position.z;
 if(praslea.position.distanceTo(water_dummy1.position)<=1100)
 	audio3.volume = interpolate(0,praslea.position.distanceTo(water_dummy1.position),1100,0.06,0);
 if(praslea.position.distanceTo(water_dummy2.position)<=800)
