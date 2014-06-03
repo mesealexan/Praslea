@@ -23,7 +23,7 @@
 "transparency"  : 1.0,
 "specularCoef"  : 10.0,
 "vertexColors" : true,
-"shading":"Phong"
+"shading":"Lambert"
 }
 
 ],
