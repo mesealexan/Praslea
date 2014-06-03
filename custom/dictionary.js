@@ -33,7 +33,8 @@ var assets = {
 	mar : {name:"mar", castShadows:true, receiveShadows:true,smoothing:true,id:10011},
 	pod : {name:"pod",castShadows:true, receiveShadows:true, smoothing:true,id:10013},
 	cal : {name:"cal",castShadows:true, receiveShadows:true, smoothing:true,id:10014},
-	fantana : {name:"fantana",castShadows:true, receiveShadows:true, smoothing:true,id:10015}
+	fantana : {name:"fantana",castShadows:true, receiveShadows:true, smoothing:true,id:10015},
+	gard : {name:"gard",castShadows:true, receiveShadows:true, smoothing:true,id:10016}
 
 }
 var content = ["teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana"];
