@@ -36,7 +36,6 @@ var assets = {
 	fantana : {name:"fantana",castShadows:true, receiveShadows:true, smoothing:true,id:10015},
 	gard : {name:"gard",castShadows:true, receiveShadows:true, smoothing:true,id:10016},
 	cer : {name:"cer",smoothing:true,id:10017}
-
 }
 var content = ["teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana","cer"];
 var walk_speed = 911  //ms
@@ -76,11 +75,13 @@ var light;
 
 var ambientLight, ambientLight2;
 
-var day = true;
+
 var day_time = 50000;
-var time_now = 0;
 var timedout;
 
 
 
+var skydom,sunLight,sunSphere;
+var genericSky;
 
+var sky;

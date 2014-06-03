@@ -102,6 +102,16 @@ function init()
 	scene.add( praslea );
 	praslea.add(light);
 	}
+
+	//Add Sky to Scene
+	jsonLoader.load( "art/sky.js",addSkyToScene);
+	function addSkyToScene( geometry, materials ) 
+	{	
+	var material = new THREE.MeshFaceMaterial( materials );
+	geometry.computeVertexNormals();
+	sky = new THREE.Mesh( geometry, material);
+	scene.add( sky );
+	}
 /*
 	//Add Zmeu to Scene
 	jsonLoader.load( "art/zmeu.js",addZmeuToScene);
@@ -188,7 +198,7 @@ function init()
 	ambientLight2 = new THREE.AmbientLight(background_color);
 	scene.add(ambientLight2);
 	//FOG  
-	scene.fog = new THREE.Fog(background_color,999, 11000);
+	scene.fog = new THREE.Fog(background_color,399, 21000);
 	//Light with shadows on
 	spotLight = new THREE.SpotLight();
 	spotLight.intensity = 1.36;
@@ -197,9 +207,19 @@ function init()
 	spotLight.target.position.set(2418,0,2627);
 	scene.add( spotLight );
 
-	light = new THREE.PointLight( 0xfaffbd, 0.661, 661 );
-	light.position.set( 10, 350, 10 );
+	light = new THREE.PointLight( 0xffffff, 0.66, 661 );
+	light.position.set( 70, 161, 90 );
 	scene.add( light );
+	/*
+skydom  = new THREEx.DayNight.Skydom();
+skydom.object3d.position.set(2776,165,2931)
+skydom.object3d.scale.set(10,10,10)
+scene.add( skydom.object3d )
+sunLight    = new THREEx.DayNight.SunLight()
+sunLight.object3d.position.set(2776,165,2931)
+sunLight.object3d.scale.set(10,10,10)
+scene.add( sunLight.object3d )
+*/
 
 	/*
 	spotLight.castShadow = true;

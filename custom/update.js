@@ -1,9 +1,11 @@
 
 time_start = new Date();
 var day = true;
-var time_now = 255;
+var time_now = 0;
+gradient = new gradient('#FBFBEF', '#0B243B', 300);
+console.log(gradient.length)
 setInterval(function(){
-	if(time_now<255 && day === true)
+	if(time_now<300 && day === true)
 		time_now ++
 	else
 	{
@@ -17,13 +19,16 @@ setInterval(function(){
 	{
 		day =true;
 	}
-background_color = rgbToHex(time_now, time_now, time_now);
-spotLight.color.setHex( background_color );
-scene.fog.color.setHex( background_color );
-ambientLight.color.setHex( background_color );
-ambientLight2.color.setHex( background_color );
+
+sky.material.materials[0].opacity = time_now/300
+//console.log(time_now)
+//background_color = gradient[time_now]
+spotLight.color.setHex( gradient[time_now] );
+scene.fog.color.setHex( gradient[time_now] );
+ambientLight.color.setHex( gradient[time_now] );
+ambientLight2.color.setHex( gradient[time_now] );
 //	console.log(time_now)
-},100);
+},333);
 
 function update()
 	{
