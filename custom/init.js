@@ -27,8 +27,8 @@ function init()
 	controls = new THREE.OrbitControls(camera, renderer.domElement);
 	controls.target = new THREE.Vector3(942,1.95,1043);
 	controls.noPan = true;
-	controls.minDistance = 166;
-	controls.maxDistance = 190;
+	controls.minDistance = 256;
+	controls.maxDistance = 310;
 	controls.rotateSpeed = 1;
 	controls.minPolarAngle = 1.047197551; // radians
 	controls.maxPolarAngle = 1.396263402; // radians

@@ -36,6 +36,11 @@ drag.on("drag", function(ev)
 	{
 //controls.enabled = true;
  	});
+
+var double_tap = new Hammer(element, options);
+double_tap.on("doubletap", function(ev)
+	{
+ 	});
 var tap = new Hammer(element, options);
 tap.on("tap", function(ev)
 	{
