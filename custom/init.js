@@ -12,7 +12,7 @@ function init()
 	// RENDERER
 	renderer = new THREE.WebGLRenderer( {antialias:true, minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat} );
 	renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-	renderer.setClearColor( 0xE0F8F7, 1 );
+	renderer.setClearColor( background_color, 1 );
 	renderer.autoClear = true;
 	renderer.gammaInput = true;
 	renderer.gammaOutput = true;
@@ -182,20 +182,24 @@ function init()
 	iepure_line = new THREE.Line(splineGeometry, splineMaterial);
 	//scene.add(iepure_line)
 	//LIGHTS
-	var ambientLight = new THREE.AmbientLight(0xffffff);
+	var ambientLight = new THREE.AmbientLight(background_color);
 	scene.add(ambientLight);
-	var ambientLight2 = new THREE.AmbientLight(0xF5F6CE);
+	var ambientLight2 = new THREE.AmbientLight(background_color);
 	scene.add(ambientLight2);
 	//FOG  
-	//scene.fog = new THREE.Fog(0xE0F8F7,110, 11000);
+	scene.fog = new THREE.Fog(background_color,999, 11000);
 	//Light with shadows on
 	spotLight = new THREE.SpotLight();
 	spotLight.intensity = 1.36;
-	spotLight.color.setHex( 0xF7D358 );
+	spotLight.color.setHex( background_color );
 	spotLight.position.set( -1657,4761,7022 );
 	spotLight.target.position.set(2418,0,2627);
 	scene.add( spotLight );
-	
+
+	light = new THREE.PointLight( 0xffffff, 0.6, 666 );
+	//light.position.set( 50, 50, 50 );
+	//scene.add( light );
+	/*
 	spotLight.castShadow = true;
 	renderer.shadowMapBias = 0.39;
 	spotLight.shadowMapWidth = shdaow_res;
@@ -204,7 +208,7 @@ function init()
 	spotLight.shadowCameraFar = 11000;
 	spotLight.shadowCameraFov = 60;
 	spotLight.shadowDarkness = 0.661;
-	
+	*/
 
 	//POST PROCESSING
 	/*

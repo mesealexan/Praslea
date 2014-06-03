@@ -71,6 +71,8 @@ var composer;
 var rgbPass;
 var colorifyPass;
 var elementToChange;
+var background_color = 0xF2F2F2;
+var light;
 
 
 

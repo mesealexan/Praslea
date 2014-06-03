@@ -1,5 +1,6 @@
 function update()
 	{
+
 		//console.log(scene.children.length)
 if(test === true)
 {
@@ -28,6 +29,10 @@ if(paznic)
 	loopMorphs2(paznic,4000,0,10,1);
 		
 if(praslea){
+
+	light.position.x = praslea.position.x;
+	light.position.y = praslea.position.y + 30;
+	light.position.z = praslea.position.z;
 if(praslea.position.distanceTo(water_dummy1.position)<=1100)
 	audio3.volume = interpolate(0,praslea.position.distanceTo(water_dummy1.position),1100,0.06,0);
 if(praslea.position.distanceTo(water_dummy2.position)<=800)
