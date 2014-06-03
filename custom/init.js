@@ -182,9 +182,9 @@ function init()
 	iepure_line = new THREE.Line(splineGeometry, splineMaterial);
 	//scene.add(iepure_line)
 	//LIGHTS
-	var ambientLight = new THREE.AmbientLight(background_color);
+	ambientLight = new THREE.AmbientLight(background_color);
 	scene.add(ambientLight);
-	var ambientLight2 = new THREE.AmbientLight(background_color);
+	ambientLight2 = new THREE.AmbientLight(background_color);
 	scene.add(ambientLight2);
 	//FOG  
 	scene.fog = new THREE.Fog(background_color,999, 11000);
@@ -196,9 +196,9 @@ function init()
 	spotLight.target.position.set(2418,0,2627);
 	scene.add( spotLight );
 
-	light = new THREE.PointLight( 0xffffff, 0.6, 666 );
+	light = new THREE.PointLight( 0xffffff, 0.88, 666 );
 	//light.position.set( 50, 50, 50 );
-	//scene.add( light );
+	scene.add( light );
 	/*
 	spotLight.castShadow = true;
 	renderer.shadowMapBias = 0.39;

@@ -169,3 +169,12 @@ function interpolate(x1,x2,x3,y1,y3){
 	var y2 = (((x2 - x1)*(y3 - y1))/(x3 - x1)) + y1;
 	return(y2);
 }
+
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+    return "0x" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}

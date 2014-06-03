@@ -71,8 +71,12 @@ var composer;
 var rgbPass;
 var colorifyPass;
 var elementToChange;
-var background_color = 0xF2F2F2;
+var background_color = rgbToHex(0, 51, 255);
 var light;
+
+var ambientLight, ambientLight2;
+
+var day = true;
 
 
 

@@ -1,5 +1,21 @@
+var uu = 0;
 function update()
 	{
+
+if(uu<255 && day ===true)
+	uu = Math.round(uu + 0.6)
+else 
+	day = false;
+if(uu>0 && day ===false)
+	uu = Math.round(uu - 0.6)
+else
+	day= true;
+//console.log(uu)
+background_color = rgbToHex(uu, uu, uu);
+spotLight.color.setHex( background_color );
+scene.fog.color.setHex( background_color );
+ambientLight.color.setHex( background_color );
+ambientLight2.color.setHex( background_color );
 
 		//console.log(scene.children.length)
 if(test === true)
@@ -31,7 +47,7 @@ if(paznic)
 if(praslea){
 
 	light.position.x = praslea.position.x;
-	light.position.y = praslea.position.y + 30;
+	light.position.y = praslea.position.y + 150;
 	light.position.z = praslea.position.z;
 if(praslea.position.distanceTo(water_dummy1.position)<=1100)
 	audio3.volume = interpolate(0,praslea.position.distanceTo(water_dummy1.position),1100,0.06,0);
