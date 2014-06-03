@@ -34,10 +34,11 @@ var assets = {
 	pod : {name:"pod",castShadows:true, receiveShadows:true, smoothing:true,id:10013},
 	cal : {name:"cal",castShadows:true, receiveShadows:true, smoothing:true,id:10014},
 	fantana : {name:"fantana",castShadows:true, receiveShadows:true, smoothing:true,id:10015},
-	gard : {name:"gard",castShadows:true, receiveShadows:true, smoothing:true,id:10016}
+	gard : {name:"gard",castShadows:true, receiveShadows:true, smoothing:true,id:10016},
+	cer : {name:"cer",smoothing:true,id:10017}
 
 }
-var content = ["teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana"];
+var content = ["teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana","cer"];
 var walk_speed = 911  //ms
 var viteza = 0.116 // metri/secunda
 var timp = 0;

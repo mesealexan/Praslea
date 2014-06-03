@@ -187,7 +187,7 @@ function init()
 	var ambientLight2 = new THREE.AmbientLight(0xF5F6CE);
 	scene.add(ambientLight2);
 	//FOG  
-	scene.fog = new THREE.Fog(0xE0F8F7,110, 11000);
+	//scene.fog = new THREE.Fog(0xE0F8F7,110, 11000);
 	//Light with shadows on
 	spotLight = new THREE.SpotLight();
 	spotLight.intensity = 1.36;
