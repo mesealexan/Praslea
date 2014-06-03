@@ -3,7 +3,7 @@ function update()
 		//console.log(scene.children.length)
 if(test === true)
 {
-if(scene.children.length === 24)
+if(scene.children.length >= 2)
 	{
 document.getElementById("loading").style.zIndex= '-1';
 document.getElementById("ready").style.zIndex= '666';
