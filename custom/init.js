@@ -207,9 +207,13 @@ function init()
 	spotLight.target.position.set(2418,0,2627);
 	scene.add( spotLight );
 
-	light = new THREE.PointLight( 0xffffff, 0.66, 661 );
-	light.position.set( 70, 161, 90 );
+	light = new THREE.PointLight( 0xffffff, 0.46, 350 );
+	light.position.set( 0, 131, 0 );
 	scene.add( light );
+
+	var light2 = new THREE.PointLight( 0xffffff, 1, 1350 );
+	light2.position.set( 107,1197,156 );
+	scene.add( light2 );
 	/*
 skydom  = new THREEx.DayNight.Skydom();
 skydom.object3d.position.set(2776,165,2931)

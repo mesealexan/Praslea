@@ -2,7 +2,7 @@
 time_start = new Date();
 var day = true;
 var time_now = 0;
-gradient = new gradient('#FBFBEF', '#0B243B', 300);
+gradient = new gradient('#F7F8E0', '#071418', 300);
 console.log(gradient.length)
 setInterval(function(){
 	if(time_now<300 && day === true)
@@ -28,7 +28,7 @@ scene.fog.color.setHex( gradient[time_now] );
 ambientLight.color.setHex( gradient[time_now] );
 ambientLight2.color.setHex( gradient[time_now] );
 //	console.log(time_now)
-},333);
+},300);
 
 function update()
 	{
