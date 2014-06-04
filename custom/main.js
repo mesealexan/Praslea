@@ -42,3 +42,16 @@ function render()
 		//composer.render(0.1);
 	}
 
+function visible_switch()
+{
+	if(options === true)
+	{
+		document.getElementById("settings_window").style.display= 'block';
+		options = false;
+	}
+	else
+	{
+		document.getElementById("settings_window").style.display= 'none';
+		options = true;
+	}
+}

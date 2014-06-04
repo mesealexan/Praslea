@@ -19,7 +19,7 @@
 
 </div>
 <div id="settingsButton">
-	<img src="img/settingsbuton.png" width="57" height="59">
+	<img src="img/settingsbuton.png" width="57" height="59" onmouseover="this.src='img/settingsbuton2.png';" onmouseout="this.src='img/settingsbuton.png'" onclick="visible_switch()">
 </div>
 	<div>
 	<img id="welcome" src="img/screen.jpg" width="1024" height="768">
@@ -32,11 +32,14 @@
 	<img id="dialog_ok" src="img/dialog_cancel.png" width="140" height="32" onclick="hide()">
 	</div>
 	<div>
-	<img id="UI" src="img/ProfilPersonaj.png" width="161" height="152">
+	<img id="UI" src="img/ProfilPersonaj.png" width="161" height="152" onmouseover="this.src='img/ProfilPersonaj2.png'" onmouseout="this.src='img/ProfilPersonaj.png'">
 	</div>
 	<div>
 	<img id="abil" src="img/BaraJos.png" width="312" height="147">
 	</div>
+<div>
+	<img id="settings_window" src="img/settings_window.png" width="450" height="600"  onclick="visible_switch()">
+</div>
 <script src="js/three.js"></script>
 <script src='js/Tween.js'></script>
 <script src="js/OrbitControls.js"></script>
