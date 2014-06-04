@@ -110,6 +110,7 @@ function init()
 	var material = new THREE.MeshFaceMaterial( materials );
 	geometry.computeVertexNormals();
 	sky = new THREE.Mesh( geometry, material);
+	sky.position.set(2224.14,2583,2640.35);
 	scene.add( sky );
 	}
 /*
