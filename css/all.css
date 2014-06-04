@@ -110,7 +110,18 @@ opacity: 0.8;
 #rightSide:hover {
   opacity: 1;
   }
-
+#poveste {
+  position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 300;
+    margin-top: -278px;
+    right: -445px;
+      -webkit-transition: right 1s ease-in-out;
+  -moz-transition: right 1s ease-in-out;
+  -o-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
+}
 #titleBar {
   position: fixed;
   width: 100%;

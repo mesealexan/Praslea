@@ -7,11 +7,13 @@ function moveBar()
 	if(reading === true)
 	{
 		document.getElementById("rightSide").style.right= '-10px';
+		document.getElementById("poveste").style.right= '-2px';
 		reading = false;
 	}
 	else
 	{
 		document.getElementById("rightSide").style.right= '-360px'
+		document.getElementById("poveste").style.right= '-360px'
 		reading = true;
 	}
 }
