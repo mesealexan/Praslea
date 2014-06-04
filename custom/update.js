@@ -20,15 +20,15 @@ setInterval(function(){
 		day =true;
 	}
 
-sky.material.materials[0].opacity = time_now/300
-//console.log(time_now)
+sky.material.materials[0].opacity = EasingFunctions.easeInOutQuad(time_now/300) 
+console.log(time_now/300)
 //background_color = gradient[time_now]
 spotLight.color.setHex( gradient[time_now] );
 scene.fog.color.setHex( gradient[time_now] );
 ambientLight.color.setHex( gradient[time_now] );
 ambientLight2.color.setHex( gradient[time_now] );
 //	console.log(time_now)
-},300);
+},10);
 
 function update()
 	{
