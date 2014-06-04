@@ -23,7 +23,8 @@
 "transparency"  : 1.0,
 "specularCoef"  : 10.0,
 "mapDiffuse"    : "Sky.jpg",
-"vertexColors" : false
+"vertexColors" : false,
+"transparent":true
 }
 
 ],
