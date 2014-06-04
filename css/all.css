@@ -9,6 +9,7 @@ body {
 		background-color: #A9E2F3;
 		margin: 0px;
 		overflow: hidden;
+    -moz-user-select: -moz-none;
 	}
 #welcome {
 	position: fixed;
@@ -99,13 +100,15 @@ opacity: 0.8;
     border: 0px;
     margin: 0px;
     font-size: 0;
-    margin-top: -309px;
-    right: -360px;
-    opacity: 0.72;
+    margin-top: -300px;
+    right: -367px;
+    opacity: 0.92;
   -webkit-transition: right 1s ease-in-out;
   -moz-transition: right 1s ease-in-out;
   -o-transition: right 1s ease-in-out;
   transition: right 1s ease-in-out;
+  overflow: hidden;
+  -moz-user-select: -moz-none;
 }
 #rightSide:hover {
   opacity: 1;
@@ -126,6 +129,7 @@ opacity: 0.8;
   transition: right 1s ease-in-out;
   overflow: hidden;
 }
+
 #titleBar {
   position: fixed;
   width: 100%;
@@ -133,6 +137,10 @@ opacity: 0.8;
   background-color: #534741;
   text-align: left;
   z-index: 500;
+}
+#butoane {
+  z-index: 400;
+  opacity: 1;
 }
 
 

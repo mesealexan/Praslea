@@ -6,8 +6,8 @@ function moveBar()
 {
 	if(reading === true)
 	{
-		document.getElementById("rightSide").style.right= '-10px';
-		document.getElementById("poveste").style.right= '-2px';
+		document.getElementById("rightSide").style.right= '0px';
+		document.getElementById("poveste").style.right= '0px';
 		reading = false;
 	}
 	else
