@@ -17,23 +17,27 @@ setInterval(function(){
 	}
 	else
 	{
-		day =true;
+		day = true;
 	}
 
-sky.material.materials[0].opacity = EasingFunctions.easeInOutQuad(time_now/300) 
-console.log(time_now/300)
+sky.material.materials[0].opacity = EasingFunctions.easeInOutQuad(time_now/300) ;
+console.log(sky.material.materials[0].opacity)
 //background_color = gradient[time_now]
 spotLight.color.setHex( gradient[time_now] );
 scene.fog.color.setHex( gradient[time_now] );
+
+if(time_now<233)
+{
 ambientLight.color.setHex( gradient[time_now] );
 ambientLight2.color.setHex( gradient[time_now] );
+}
 //	console.log(time_now)
-},10);
+},100);
 
 function update()
 	{
 
-
+sky.rotation.y += 0.0001;
 		/*
 	time_now = new Date();
 

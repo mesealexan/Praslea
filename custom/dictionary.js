@@ -88,3 +88,4 @@ var skydom,sunLight,sunSphere;
 var genericSky;
 
 var sky;
+var gradient, gradient2;
