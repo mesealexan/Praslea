@@ -21,7 +21,6 @@ setInterval(function(){
 	}
 
 sky.material.materials[0].opacity = EasingFunctions.easeInOutQuad(time_now/300) ;
-console.log(sky.material.materials[0].opacity)
 //background_color = gradient[time_now]
 spotLight.color.setHex( gradient[time_now] );
 scene.fog.color.setHex( gradient[time_now] );
