@@ -38,10 +38,9 @@ var assets = {
 	cer : {name:"cer",smoothing:true,id:10017},
 	bear : {name:"bear",smoothing:true,id:10018},
 	brazi : {name:"brazi",smoothing:true,id:10019},
-	copaci2 : {name:"copaci2",smoothing:true,id:10020},
-	moara : {name:"moara",id:10121}
+	copaci2 : {name:"copaci2",smoothing:true,id:10020}
 }
-var content = ["moara","teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana","cer","bear","brazi","copaci2"];
+var content = ["teren","copaci","apa","casa","car","gard","dealuri","semn","turnulet","poarta","mar","anticlick","pod","cal","fantana","cer","bear","brazi","copaci2"];
 var walk_speed = 911  //ms
 var viteza = 0.116 // metri/secunda
 var timp = 0;
