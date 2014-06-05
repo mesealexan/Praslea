@@ -79,7 +79,7 @@ opacity: 0.8;
 	top: 100%;
   left: 50%;
   z-index: 100;
-  margin-top: -77px;
+  margin-top: -61px;
   margin-left: -156px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -101,18 +101,14 @@ opacity: 0.8;
     margin: 0px;
     font-size: 0;
     margin-top: -300px;
-    right: -367px;
-    opacity: 0.92;
+    right: -357px;
+    opacity: 1;
   -webkit-transition: right 1s ease-in-out;
   -moz-transition: right 1s ease-in-out;
   -o-transition: right 1s ease-in-out;
   transition: right 1s ease-in-out;
   overflow: hidden;
-  -moz-user-select: -moz-none;
 }
-#rightSide:hover {
-  opacity: 1;
-  }
 #poveste {
   position: fixed;
     top: 50%;
@@ -137,10 +133,6 @@ opacity: 0.8;
   background-color: #534741;
   text-align: left;
   z-index: 500;
-}
-#butoane {
-  z-index: 400;
-  opacity: 1;
 }
 
 

@@ -19,7 +19,7 @@ setInterval(function(){
 	{
 		day = true;
 	}
-
+if(sky)
 sky.material.materials[0].opacity = EasingFunctions.easeInOutQuad(time_now/300) ;
 //background_color = gradient[time_now]
 spotLight.color.setHex( gradient[time_now] );
@@ -35,8 +35,9 @@ ambientLight2.color.setHex( gradient[time_now] );
 
 function update()
 	{
-
-sky.rotation.y += 0.0001;
+console.log(reading);
+if(sky)
+	sky.rotation.y += 0.0001;
 		/*
 	time_now = new Date();
 

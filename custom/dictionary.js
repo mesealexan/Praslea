@@ -67,13 +67,13 @@ var water_dummy1,water_dummy2;
 var mouse_helper, anticlick;
 var click_group;
 var poteca;
-var reading = true;
+var reading = false;
 
 var composer;
 var rgbPass;
 var colorifyPass;
 var elementToChange;
-var background_color = rgbToHex(0, 51, 255);
+var background_color;
 var light;
 
 var ambientLight, ambientLight2;

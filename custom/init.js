@@ -215,6 +215,7 @@ function init()
 	var light2 = new THREE.PointLight( 0xffffff, 1, 1350 );
 	light2.position.set( 107,1197,156 );
 	scene.add( light2 );
+
 	/*
 skydom  = new THREEx.DayNight.Skydom();
 skydom.object3d.position.set(2776,165,2931)

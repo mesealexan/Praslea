@@ -10,11 +10,12 @@
 </head>
 <body>
 <div id="titleBar"> Praslea cel voinic si merele de aur. Un joc realizat de <a href="http://aeche.eu/">aeche</a> studio</div>
-<div id="rightSide" onclick="moveBar()">
-	<iframe id="poveste" src="https://kiwiirc.com/client/irc.kiwiirc.com/?nick=alex|?&theme=mini#aeche_game" width="342" height="552" ></iframe>
-	<img  id="butoane" src="img/BaraLaterala_top.png" width="60" height="65" style="position:relative; top:-341px; right: -121px" onmouseover="this.src='img/BaraLaterala_top2.png'" onmouseout="this.src='img/BaraLaterala_top.png'">
-	<img id="butoane"src="img/BaraLaterala_mid.png" width="60" height="65" style="position:relative; top:-276px; right: -60px"onmouseover="this.src='img/BaraLaterala_mid2.png'" onmouseout="this.src='img/BaraLaterala_mid.png'">
-	<img id="butoane"src="img/BaraLaterala_bot.png" width="60" height="65" style="position:relative; top:-216px; right: -1px"onmouseover="this.src='img/BaraLaterala_bot2.png'" onmouseout="this.src='img/BaraLaterala_bot.png'">
+<div id="rightSide"  onclick="openRightSidePanel()">
+	<img  id="buton_close" src="img/close_button.png" width="37" height="37" style="position:relative; top:-530px; right: -540px; z-index:400"  >
+	<iframe id="iframe" src="https://kiwiirc.com/client/irc.kiwiirc.com/?nick=alex|?&theme=mini#aeche_game" frameborder="0" width="342" height="552" style="position:absolute; top:24px; right: 0px"></iframe>
+	<img  id="buton_web"  src="img/BaraLaterala_top.png" width="60" height="65" style="position:relative; top:-341px; right: -121px" onmouseover="this.src='img/BaraLaterala_top2.png'" onmouseout="this.src='img/BaraLaterala_top.png'">
+	<img id="buton_chat" src="img/BaraLaterala_mid.png" width="60" height="65" style="position:relative; top:-276px; right: -60px"onmouseover="this.src='img/BaraLaterala_mid2.png'" onmouseout="this.src='img/BaraLaterala_mid.png'">
+	<img id="buton_story"  src="img/BaraLaterala_bot.png" width="60" height="65" style="position:relative; top:-216px; right: -1px"onmouseover="this.src='img/BaraLaterala_bot2.png'" onmouseout="this.src='img/BaraLaterala_bot.png'">
 	<img src="img/BaraLaterala_chat.png" width="367" height="600" >
 
 </div>

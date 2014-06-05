@@ -2,21 +2,33 @@ elementToChange = document.getElementsByTagName("body")[0];
 elementToChange.style.cursor = "url('http://www.aeche.eu/cursor/Arrow.cur'), auto";
 //document.body.style.cursor = "http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur";
 init();
-function moveBar()
+var web = document.getElementById('buton_web');
+var chat = document.getElementById('buton_chat');
+var story = document.getElementById('buton_story');
+var closer = document.getElementById('buton_close');
+
+function openRightSidePanel()
 {
+	//if(document.getElementById("rightSide").style.right === '0px')
+	if(reading === false)
+	{
+	document.getElementById("rightSide").style.right= '0px';
+	reading = true;
+	}
 	if(reading === true)
 	{
-		document.getElementById("rightSide").style.right= '0px';
-		document.getElementById("poveste").style.right= '0px';
-		reading = false;
+	web.onclick = function(){document.getElementById("iframe").src = "http://www.aeche.eu/Index.html"};
+	chat.onclick = function(){document.getElementById("iframe").src = "https://kiwiirc.com/client/irc.kiwiirc.com/?nick=alex|?&theme=mini#aeche_game"};
+	story.onclick = function(){document.getElementById("iframe").src = "http:www.aeche.eu/Praslea/page1.html"};
+	story.onclick = function(){document.getElementById("iframe").src = "http:www.aeche.eu/Praslea/page1.html"};
+	closer.onclick = function(){
+		document.getElementById("rightSide").style.right= '-357px';
+		setTimeout(function(){reading = false},1000)
+		};
 	}
-	else
-	{
-		document.getElementById("rightSide").style.right= '-360px'
-		document.getElementById("poveste").style.right= '-360px'
-		reading = true;
-	}
+
 }
+
 function hide()
 {
 	document.getElementById("dialog").style.zIndex= '-1';
