@@ -7,6 +7,7 @@ var chat = document.getElementById('buton_chat');
 var story = document.getElementById('buton_story');
 var closer = document.getElementById('buton_close');
 
+
 function openRightSidePanel()
 {
 	//if(document.getElementById("rightSide").style.right === '0px')
@@ -17,7 +18,9 @@ function openRightSidePanel()
 	}
 	if(reading === true)
 	{
-	web.onclick = function(){document.getElementById("iframe").src = "http://www.aeche.eu/Index.html"};
+	web.onclick = function(){
+		document.getElementById("iframe").src = "http://www.aeche.eu/Index.html"
+	};
 	chat.onclick = function(){document.getElementById("iframe").src = "https://kiwiirc.com/client/irc.kiwiirc.com/?nick=alex|?&theme=mini#aeche_game"};
 	story.onclick = function(){document.getElementById("iframe").src = "http:www.aeche.eu/Praslea/page1.html"};
 	story.onclick = function(){document.getElementById("iframe").src = "http:www.aeche.eu/Praslea/page1.html"};

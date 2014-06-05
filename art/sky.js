@@ -25,7 +25,8 @@
 "mapDiffuse"    : "Sky.jpg",
 "vertexColors" : false,
 "shading":"Phong",
-"transparent":true
+"transparent":true,
+"emission": 0.5
 }
 
 ],
