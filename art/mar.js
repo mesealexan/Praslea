@@ -19,9 +19,9 @@
 "DbgName"  : "02 - Default",
 "colorDiffuse"  : [0.5882, 0.5882, 0.5882],
 "colorAmbient"  : [0.5882, 0.5882, 0.5882],
-"colorSpecular"  : [0.8000, 0.8000, 0.8000],
+"colorSpecular"  : [0.6500, 0.6500, 0.6500],
 "transparency"  : 1.0,
-"specularCoef"  : 3.0,
+"specularCoef"  : 7.0,
 "mapDiffuse"    : "mar_pom.dds",
 "vertexColors" : false,
 "shading":"Phong"
