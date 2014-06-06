@@ -31,7 +31,7 @@ ambientLight.color.setHex( gradient[time_now] );
 ambientLight2.color.setHex( gradient[time_now] );
 }
 //	console.log(time_now)
-},100);
+},3000);
 
 function update()
 	{

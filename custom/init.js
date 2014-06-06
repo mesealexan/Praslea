@@ -211,10 +211,29 @@ function init()
 	light = new THREE.PointLight( 0xffffff, 0.46, 350 );
 	light.position.set( 0, 131, 0 );
 	scene.add( light );
+	var intensity1 = 1;
+	var distance = 16000;
 
-	var light2 = new THREE.PointLight( 0xffffff, 1, 1350 );
-	light2.position.set( 107,1197,156 );
+	light1 = new THREE.PointLight( 0xffffff, intensity1, distance );
+	light1.position.set(-18787, 7500, 3020 );
+	scene.add( light1 );
+
+	light2 = new THREE.PointLight( 0xffffff, intensity1, distance );
+	light2.position.set( -2260, 7500, -16902 );
 	scene.add( light2 );
+
+	light3 = new THREE.PointLight( 0xffffff, intensity1, distance );
+	light3.position.set(22936, 7500, -9900 );
+	scene.add( light3 );
+
+	light4 = new THREE.PointLight( 0xffffff, intensity1, distance );
+	light4.position.set( 19512, 7500, 16329 );
+	scene.add( light4 );
+
+	light5 = new THREE.PointLight( 0xffffff, intensity1, distance );
+	light5.position.set( -4509, 7500, 24482 );
+	scene.add( light5 );
+
 
 	/*
 skydom  = new THREEx.DayNight.Skydom();
